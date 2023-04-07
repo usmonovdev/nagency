@@ -1,0 +1,27 @@
+:root {
+  /* MAIN COLORS */
+ --main--blue: #00b5e2,
+ --main--pink: #f0899c,
+ 
+ /* ALERTS */
+ --alert--success: #00c566,
+ --alert--error: #ff4747,
+ --alert--warning: #facc15,
+
+ /* GREYSCALE */
+ --greyscale--black: #0f172a,
+ --greyscale--grey: #657790,
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}

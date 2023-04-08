@@ -1,4 +1,8 @@
 import Container from "./Container.vue"
-import Navbar from "./Navbar.vue"
+import NavbarLarge from "./navbar/NavbarLarge.vue"
+import NavbarSmall from "./navbar/NavbarSmall.vue"
 
-export default [Container, Navbar]
+// UI COMPONENTS
+import PrimaryButton from "../ui-components/PrimaryButton.vue"
+
+export default [Container, NavbarLarge, NavbarSmall, PrimaryButton]

@@ -1,14 +1,11 @@
 <script setup>
-    import "./assets/base.css"
+import "./assets/base.css";
 </script>
 
 <template>
-  <Navbar/>
-  <Container>
-    
-  </Container>
+  <NavbarLarge/>
+  <NavbarSmall/>
+  <Container></Container>
 </template>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

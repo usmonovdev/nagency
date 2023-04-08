@@ -1,3 +1,4 @@
-import Container from "./container/Container.vue"
+import Container from "./Container.vue"
+import Navbar from "./Navbar.vue"
 
-export default [Container]
+export default [Container, Navbar]

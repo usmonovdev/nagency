@@ -1,75 +1,159 @@
 <template>
   <header>
-    <div class="container">
+    <Container>
       <div class="box">
         <img src="../../assets/logo.png" alt="logo" />
-        <ul>
-          <li class="link active"><a href="#">Home</a></li>
-          <li class="link"><a href="#">About</a></li>
-          <li class="link"><a href="#">Service</a></li>
-          <li class="link"><a href="#">Testimonial</a></li>
-          <li class="link"><a href="#">Pages</a></li>
-          <li class="link"><a href="#">Pricing</a></li>
-        </ul>
-        <PrimaryButton>Contact Usasasd</PrimaryButton>
+        <div
+          class="burger_button"
+          @click="menu = !menu"
+          :class="{ active: menu == true }"
+        >
+          <ul>
+            <li><div></div></li>
+            <li><div></div></li>
+            <li><div></div></li>
+          </ul>
+        </div>
+        <div class="items" :class="{ active: menu == true }">
+          <ul>
+            <li class="link active"><a href="#">Home</a></li>
+            <li class="link"><a href="#">About</a></li>
+            <li class="link"><a href="#">Service</a></li>
+            <li class="link"><a href="#">Testimonial</a></li>
+            <li class="link"><a href="#">Pages</a></li>
+            <li class="link"><a href="#">Pricing</a></li>
+            <li class="link"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </Container>
   </header>
 </template>
 
 <script>
 export default {
   name: "NavbarSmall",
+  data() {
+    return {
+      menu: false,
+    };
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 header {
   height: 90px;
-  @media screen and (max-width: 992px) {
-    display: block;
+  display: flex;
+  align-items: center;
+  @media screen and (min-width: 993px) {
+    display: none;
   }
-  .container {
-    width: 90vw;
+  .box {
+    width: 100%;
     height: 100%;
-    margin: 0 auto;
-    @media screen and (max-width: 600px) {
-      width: 95vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      width: 37px;
+      height: 31px;
     }
-    .box {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      img {
-        width: 37px;
-        height: 31px;
+    .burger_button {
+      z-index: 100;
+      cursor: pointer;
+      ul {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0;
+        li {
+          transition: 200ms;
+          list-style: none;
+          div {
+            width: 100%;
+            height: 3px;
+            background-color: var(--greyscale--black);
+          }
+          &:nth-child(1) {
+            width: 100%;
+          }
+          &:nth-child(2) {
+            width: 70%;
+          }
+          &:nth-child(3) {
+            width: 40%;
+          }
+        }
+      }
+    }
+    .burger_button.active {
+      ul {
+        li {
+          width: 100% !important;
+        }
+      }
+    }
+    .items {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      transform-origin: right;
+      transform: translateX(100%);
+      width: 40vw;
+      height: 100vh;
+      padding: 0 10px;
+      background-color: var(--main--pink);
+      box-shadow: 0px 4px 64px rgba(35, 40, 105, 0.08);
+      transition: 200ms;
+      z-index: 1;
+      @media screen and (max-width: 768px) {
+        width: 60vw;
+      }
+      @media screen and (max-width: 600px) {
+        width: 100vw;
       }
       ul {
+        position: relative;
+        top: 90px;
         display: flex;
-        flex-direction: row;
-        gap: 40px;
-        padding: 0;
+        flex-direction: column;
+        gap: 10px;
         .link {
+          cursor: pointer;
+          padding: 10px;
+          box-shadow: 0px 4px 64px rgba(35, 40, 105, 0.08);
           list-style: none;
           font-weight: 500;
           font-size: 16px;
+          text-transform: uppercase;
           line-height: 24px;
           transition: 200ms;
+          border-radius: 10px;
           a {
             text-decoration: none;
-            color: var(--greyscale--grey);
+            color: var(--main--white);
           }
-          &:hover a {
-            color: var(--greyscale--black);
+          &:hover {
+            background-color: var(--main--blue);
+          }
+          &:last-child {
+            background-color: var(--main--blue);
           }
         }
-        .link.active a {
-          color: var(--greyscale--black);
+        .link.active {
+          background-color: var(--main--blue);
         }
       }
+    }
+    .items.active {
+      display: block !important;
+      transform: translateX(0);
     }
   }
 }

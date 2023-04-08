@@ -6,6 +6,7 @@ import "./assets/base.css";
   <NavbarLarge/>
   <NavbarSmall/>
   <Container></Container>
+  <FooterBottom/>
 </template>
 
 <style scoped lang="scss"></style>

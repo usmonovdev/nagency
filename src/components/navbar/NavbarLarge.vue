@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="container">
+    <Container>
       <div class="box">
         <img src="../../assets/logo.png" alt="logo" />
         <ul>
@@ -13,7 +13,7 @@
         </ul>
         <PrimaryButton>Contact Us</PrimaryButton>
       </div>
-    </div>
+    </Container>
   </header>
 </template>
 
@@ -26,49 +26,43 @@ export default {
 <style lang="scss" scoped>
 header {
   height: 90px;
+  display: flex;
+  align-items: center;
   @media screen and (max-width: 992px) {
     display: none;
   }
-  .container {
-    width: 90vw;
+  .box {
+    width: 100%;
     height: 100%;
-    margin: 0 auto;
-    @media screen and (max-width: 600px) {
-      width: 95vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      width: 37px;
+      height: 31px;
     }
-    .box {
-      width: 100%;
-      height: 100%;
+    ul {
       display: flex;
       flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      img {
-        width: 37px;
-        height: 31px;
-      }
-      ul {
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
-        padding: 0;
-        .link {
-          list-style: none;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 24px;
-          transition: 200ms;
-          a {
-            text-decoration: none;
-            color: var(--greyscale--grey);
-          }
-          &:hover a {
-            color: var(--greyscale--black);
-          }
+      gap: 40px;
+      padding: 0;
+      .link {
+        list-style: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        transition: 200ms;
+        a {
+          text-decoration: none;
+          color: var(--greyscale--grey);
         }
-        .link.active a {
+        &:hover a {
           color: var(--greyscale--black);
         }
+      }
+      .link.active a {
+        color: var(--greyscale--black);
       }
     }
   }

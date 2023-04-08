@@ -102,15 +102,12 @@ header {
       position: absolute;
       top: 0;
       right: 0;
-      display: block;
-      transform-origin: right;
-      transform: translateX(100%);
+      display: none;
       width: 40vw;
       height: 100vh;
       padding: 0 10px;
       background-color: var(--main--pink);
       box-shadow: 0px 4px 64px rgba(35, 40, 105, 0.08);
-      transition: 200ms;
       z-index: 1;
       @media screen and (max-width: 768px) {
         width: 60vw;
@@ -153,7 +150,15 @@ header {
     }
     .items.active {
       display: block !important;
-      transform: translateX(0);
+      animation: menu 200ms both;
+    }
+    @keyframes menu {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
     }
   }
 }

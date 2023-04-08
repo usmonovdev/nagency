@@ -11,7 +11,7 @@
           <li class="link"><a href="#">Pages</a></li>
           <li class="link"><a href="#">Pricing</a></li>
         </ul>
-        <PrimaryButton>Contact Us</PrimaryButton>
+        <PinkButton><a href="#" class="contact">Contact Us</a></PinkButton>
       </div>
     </Container>
   </header>
@@ -24,6 +24,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.contact {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--main--white);
+  text-decoration: none;
+}
 header {
   height: 90px;
   display: flex;

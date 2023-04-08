@@ -3,7 +3,12 @@ import NavbarLarge from "./navbar/NavbarLarge.vue"
 import NavbarSmall from "./navbar/NavbarSmall.vue"
 import FooterBottom from "./FooterBottom.vue"
 
-// UI COMPONENTS
-import PrimaryButton from "../ui-components/PrimaryButton.vue"
+// HOME 
+// FIRST COMPONENTS
+import HomeFirstIndex from "./home/first/Index.vue"
 
-export default [Container, NavbarLarge, NavbarSmall, FooterBottom, PrimaryButton]
+// UI COMPONENTS
+import PinkButton from "../ui-components/PinkButton.vue"
+import BlueButton from "../ui-components/BlueButton.vue"
+
+export default [Container, NavbarLarge, NavbarSmall, FooterBottom, PinkButton, BlueButton, HomeFirstIndex]

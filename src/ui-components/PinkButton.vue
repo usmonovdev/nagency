@@ -1,11 +1,11 @@
 <template>
   <button>
-    <a href="#"><slot></slot></a>
+    <slot></slot>
   </button>
 </template>
 <script>
 export default {
-  name: "PrimaryButton",
+  name: "PinkButton",
 };
 </script>
 <style lang="scss" scoped>
@@ -20,14 +20,5 @@ button {
   background: var(--main--pink);
   border-radius: 5px;
   border: none;
-  a {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: -0.02em;
-    color: var(--main--white);
-    text-decoration: none;
-  }
 }
 </style>

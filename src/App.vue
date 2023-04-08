@@ -5,7 +5,9 @@ import "./assets/base.css";
 <template>
   <NavbarLarge/>
   <NavbarSmall/>
-  <Container></Container>
+  <Container>
+    <HomeFirstIndex/>
+  </Container>
   <FooterBottom/>
 </template>
 

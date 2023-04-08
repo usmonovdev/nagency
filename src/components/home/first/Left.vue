@@ -59,6 +59,9 @@ export default {
     font-size: 60px;
     font-weight: 600;
     color: var(--greyscale--black);
+    @media screen and (max-width: 600px) {
+      font-size: 48px;
+    }
   }
   .info-text {
     font-weight: 400;

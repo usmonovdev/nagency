@@ -22,5 +22,6 @@ export default {
   width: 100%;
   display: flex;
   flex-direction: row;
+  gap: 40px;
 }
 </style>

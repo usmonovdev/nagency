@@ -1,14 +1,10 @@
 <template>
-  <div>
-    <slot>
-      <div v-for="data in team">
-        <img :src="data.photo" :alt="data.name" />
-        <div class="tooltip">
-          <p class="name">{{ data.name }}</p>
-          <p class="profession">{{ data.profession }}</p>
-        </div>
-      </div>
-    </slot>
+  <div class="data" v-for="data in team">
+    <img :src="data.photo" :alt="data.name" />
+    <div class="tooltip">
+      <p class="name">{{ data.name }}</p>
+      <p class="profession">{{ data.profession }}</p>
+    </div>
   </div>
 </template>
 
@@ -64,7 +60,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-div {
+.data {
   position: relative;
   display: flex;
   justify-content: center;

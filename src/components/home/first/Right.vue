@@ -1,6 +1,8 @@
 <template>
   <div class="home-right">
-    <Team class="team"></Team>
+    <div class="team">
+      <Team></Team>
+    </div>
   </div>
 </template>
 

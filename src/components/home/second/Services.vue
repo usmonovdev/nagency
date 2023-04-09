@@ -17,9 +17,6 @@ export default {
             services: services
         }
     },
-    mounted() {
-        console.log(services);
-    },
 }
 </script>
 

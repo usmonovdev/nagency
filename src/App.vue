@@ -9,6 +9,7 @@ import "./assets/base.css";
     <div class="main-style">
       <HomeFirstIndex />
       <HomeSecondIndex />
+      <HomeThirdIndex />
     </div>
   </Container>
   <FooterBottom />
@@ -19,5 +20,8 @@ import "./assets/base.css";
   display: flex;
   flex-direction: column;
   gap: 100px;
+  &:last-child {
+    margin-bottom: 100px;
+  }
 }
 </style>

@@ -23,5 +23,7 @@ export default {
   display: flex;
   flex-direction: row;
   gap: 40px;
+  position: relative;
+  top: 40px;
 }
 </style>

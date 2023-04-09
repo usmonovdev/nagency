@@ -1,22 +1,21 @@
 <template>
-  <div class="our-service">
+  <div class="our-works">
     <div class="title">
-      <TitleName> Our Service </TitleName>
-      <TitleInfo> What Can We Bring for You </TitleInfo>
+      <TitleName> Our Works </TitleName>
+      <TitleInfo> This is How We Works </TitleInfo>
     </div>
-    <Services />
+    <FakeVid/>
   </div>
 </template>
 <script>
-import Services from "./Services.vue";
-
+import FakeVid from "./FakeVid.vue"
 export default {
-  name: "HomeSecondIndex",
-  components: { Services },
+  name: "HomeThirdIndex",
+  components: { FakeVid }
 };
 </script>
 <style lang="scss" scoped>
-.our-service {
+.our-works {
   display: flex;
   flex-direction: column;
   gap: 50px;

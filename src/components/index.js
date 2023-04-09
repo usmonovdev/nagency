@@ -7,10 +7,15 @@ import FooterBottom from "./FooterBottom.vue"
 // FIRST COMPONENTS
 import HomeFirstIndex from "./home/first/Index.vue"
 import HomeSecondIndex from "./home/second/Index.vue"
+import HomeThirdIndex from "./home/third/Index.vue"
 
 // UI COMPONENTS
 import PinkButton from "../ui-components/PinkButton.vue"
 import BlueButton from "../ui-components/BlueButton.vue"
-import Team from "../ui-components/Team.vue"
+import TitleInfo from "../ui-components/TitleInfo.vue"
+import TitleName from "../ui-components/TitleName.vue"
 
-export default [Container, NavbarLarge, NavbarSmall, FooterBottom, PinkButton, BlueButton, HomeFirstIndex, HomeSecondIndex, Team]
+export default [
+    Container, NavbarLarge, NavbarSmall, FooterBottom, PinkButton, BlueButton, HomeFirstIndex, HomeSecondIndex, 
+    TitleInfo, TitleName, HomeThirdIndex
+]

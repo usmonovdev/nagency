@@ -53,9 +53,6 @@ export default {
       ],
     };
   },
-  mounted() {
-    console.log(this.team);
-  },
 };
 </script>
 

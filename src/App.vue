@@ -3,12 +3,21 @@ import "./assets/base.css";
 </script>
 
 <template>
-  <NavbarLarge/>
-  <NavbarSmall/>
+  <NavbarLarge />
+  <NavbarSmall />
   <Container>
-    <HomeFirstIndex/>
+    <div class="main-style">
+      <HomeFirstIndex />
+      <HomeSecondIndex />
+    </div>
   </Container>
-  <FooterBottom/>
+  <FooterBottom />
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.main-style {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+</style>

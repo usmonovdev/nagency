@@ -9,11 +9,66 @@
     <BlueButton><a href="#" class="link">Contact Us</a></BlueButton>
     <div>
       <div class="star-group">
-        <img src="@/assets/icon/star.png" alt="star" />
-        <img src="@/assets/icon/star.png" alt="star" />
-        <img src="@/assets/icon/star.png" alt="star" />
-        <img src="@/assets/icon/star.png" alt="star" />
-        <img src="@/assets/icon/star.png" alt="star" />
+        <svg
+          width="17"
+          height="16"
+          viewBox="0 0 17 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.4122 0L11.0116 5.26604L16.8244 6.11062L12.6183 10.2107L13.6109 16L8.4122 13.2677L3.21346 16L4.2061 10.2107L0 6.11062L5.81283 5.26604L8.4122 0Z"
+            fill="#F59E0B"
+          />
+        </svg>
+        <svg
+          width="17"
+          height="16"
+          viewBox="0 0 17 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.4122 0L11.0116 5.26604L16.8244 6.11062L12.6183 10.2107L13.6109 16L8.4122 13.2677L3.21346 16L4.2061 10.2107L0 6.11062L5.81283 5.26604L8.4122 0Z"
+            fill="#F59E0B"
+          />
+        </svg>
+        <svg
+          width="17"
+          height="16"
+          viewBox="0 0 17 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.4122 0L11.0116 5.26604L16.8244 6.11062L12.6183 10.2107L13.6109 16L8.4122 13.2677L3.21346 16L4.2061 10.2107L0 6.11062L5.81283 5.26604L8.4122 0Z"
+            fill="#F59E0B"
+          />
+        </svg>
+        <svg
+          width="17"
+          height="16"
+          viewBox="0 0 17 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.4122 0L11.0116 5.26604L16.8244 6.11062L12.6183 10.2107L13.6109 16L8.4122 13.2677L3.21346 16L4.2061 10.2107L0 6.11062L5.81283 5.26604L8.4122 0Z"
+            fill="#F59E0B"
+          />
+        </svg>
+        <svg
+          width="17"
+          height="16"
+          viewBox="0 0 17 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.4122 0L11.0116 5.26604L16.8244 6.11062L12.6183 10.2107L13.6109 16L8.4122 13.2677L3.21346 16L4.2061 10.2107L0 6.11062L5.81283 5.26604L8.4122 0Z"
+            fill="#F59E0B"
+          />
+        </svg>
       </div>
       <p class="second-info-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -22,7 +77,7 @@
       </p>
     </div>
     <div class="user">
-      <img src="@/assets/image/sulli_kiri.png" alt="sulli kiri" />
+      <img src="@/assets/image/sulli_kiri.svg" alt="sulli kiri" />
       <div>
         <h4>Sulli Kiri</h4>
         <p>CEO Dream Team</p>
@@ -73,9 +128,6 @@ export default {
     flex-direction: row;
     gap: 5px;
     margin-bottom: 10px;
-    img {
-      width: 16px;
-    }
   }
   .second-info-text {
     font-weight: 400;

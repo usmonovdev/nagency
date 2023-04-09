@@ -10,5 +10,6 @@ import HomeFirstIndex from "./home/first/Index.vue"
 // UI COMPONENTS
 import PinkButton from "../ui-components/PinkButton.vue"
 import BlueButton from "../ui-components/BlueButton.vue"
+import Team from "../ui-components/Team.vue"
 
-export default [Container, NavbarLarge, NavbarSmall, FooterBottom, PinkButton, BlueButton, HomeFirstIndex]
+export default [Container, NavbarLarge, NavbarSmall, FooterBottom, PinkButton, BlueButton, HomeFirstIndex, Team]

@@ -52,10 +52,10 @@
         <li class="social copyright">
           Follow us on:
           <ul>
-            <li><img src="../assets/icon/discord.png" alt="discord" /></li>
-            <li><img src="../assets/icon/twitter.png" alt="twitter" /></li>
-            <li><img src="../assets/icon/telegram.png" alt="telegram" /></li>
-            <li><img src="../assets/icon/youtube.png" alt="youtube" /></li>
+            <li><img src="../assets/icon/discord.svg" alt="discord" /></li>
+            <li><img src="../assets/icon/twitter.svg" alt="twitter" /></li>
+            <li><img src="../assets/icon/telegram.svg" alt="telegram" /></li>
+            <li><img src="../assets/icon/youtube.svg" alt="youtube" /></li>
           </ul>
         </li>
       </ul>
@@ -93,7 +93,7 @@ footer {
         li {
           list-style: none;
           img {
-            width: 37px;
+            width: 40px;
           }
         }
         .info-text {
@@ -112,7 +112,7 @@ footer {
       @media screen and (max-width: 992px) {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
       }
       ul {
         li {

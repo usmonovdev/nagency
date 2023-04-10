@@ -10,6 +10,7 @@ import "./assets/base.css";
       <HomeFirstIndex />
       <HomeSecondIndex />
       <HomeThirdIndex />
+      <HomeFourthIndex />
     </div>
   </Container>
   <FooterBottom />

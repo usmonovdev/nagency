@@ -1,6 +1,10 @@
 <template>
   <div class="team-scroll">
-    <div class="data" v-for="data in team">
+    <div
+      class="data"
+      v-for="data in team"
+      :class="{ active: data.length == index }"
+    >
       <img :src="data.photo" :alt="data.name" />
       <div class="tooltip">
         <p class="name">{{ data.name }}</p>
@@ -16,6 +20,7 @@ export default {
   data() {
     return {
       team: team,
+      index: 6,
     };
   },
 };
@@ -25,6 +30,7 @@ export default {
 .team-scroll {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 30px;
   min-width: 100%;
   min-height: 280px;
@@ -39,7 +45,6 @@ export default {
     display: flex;
     justify-content: center;
     transition: 100ms ease-out;
-    // box-shadow: 0px 4px 64px rgba(35, 40, 105, 0.1);
     border-radius: 20px;
     &:nth-child(odd) {
       transform: rotate(-3deg);

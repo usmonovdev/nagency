@@ -11,6 +11,7 @@ import "./assets/base.css";
       <HomeSecondIndex />
       <HomeThirdIndex />
       <HomeFourthIndex />
+      <HomeFifthIndex />
     </div>
   </Container>
   <FooterBottom />

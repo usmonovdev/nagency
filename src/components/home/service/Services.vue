@@ -1,6 +1,6 @@
 <template>
     <div class="service">
-        <div class="border" v-for="service in services">
+        <div class="border" v-for="service in services" :key="service.id">
             <img :src="service.photo" :alt="service.name">
             <h4>{{ service.name }}</h4>
             <p>{{ service.title }}</p>

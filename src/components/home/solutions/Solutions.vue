@@ -1,6 +1,6 @@
 <template>
   <div class="solutions-box">
-    <div v-for="data in solution" class="solutions">
+    <div v-for="data in solution" class="solutions" :key="data.id">
       <div class="img-box">
         <img :src="data.photo" alt="" />
       </div>

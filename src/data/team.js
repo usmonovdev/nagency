@@ -10,31 +10,37 @@ const team = [
         name: "Albert William",
         profession: "Project Manager",
         photo: `${Albert}`,
+        id: 1
     },
     {
         name: "Samuel",
         profession: "Mobile Developer",
         photo: `${Samuel}`,
+        id: 2
     },
     {
         name: "Arthur",
         profession: "Web Developer",
         photo: `${Arthur}`,
+        id: 3
     },
     {
         name: "Henry",
         profession: "Web Developer",
         photo: `${Henry}`,
+        id: 4
     },
     {
         name: "Lucas",
         profession: "Mobile Developer",
         photo: `${Lucas}`,
+        id: 5
     },
     {
         name: "Isabella",
         profession: "Web Designer",
         photo: `${Isabella}`,
+        id: 6
     },
 ];
 

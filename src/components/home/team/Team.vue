@@ -4,6 +4,7 @@
       class="data"
       v-for="data in team"
       :class="{ active: data.length == index }"
+      :key="data.id"
     >
       <img :src="data.photo" :alt="data.name" />
       <div class="tooltip">
@@ -35,9 +36,7 @@ export default {
   min-width: 100%;
   min-height: 280px;
   padding: 15px 10px;
-  @media screen and (max-width: 992px) {
-    overflow-x: scroll;
-  }
+  overflow-x: scroll;
   .data {
     width: 170px;
     height: 227px;

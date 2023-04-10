@@ -21,5 +21,8 @@ button {
   background: var(--main--blue);
   border-radius: 5px;
   border: none;
+  white-space: nowrap;
+  color: var(--main--white);
+  cursor: pointer;
 }
 </style>

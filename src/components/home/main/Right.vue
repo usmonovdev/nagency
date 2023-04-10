@@ -1,7 +1,7 @@
 <template>
   <div class="home-right">
     <div class="team">
-      <div class="data" v-for="data in team">
+      <div class="data" v-for="data in team" :key="data.id">
         <img :src="data.photo" :alt="data.name" />
         <div class="tooltip">
           <p class="name">{{ data.name }}</p>

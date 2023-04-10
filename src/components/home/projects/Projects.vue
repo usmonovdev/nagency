@@ -1,6 +1,6 @@
 <template>
   <div class="project">
-    <div v-for="data in project" class="data">
+    <div v-for="data in project" class="data" :key="data.id">
       <img :src="data.photo" :alt="data.name" />
       <div class="tooltip">
         <p class="name">{{ data.name }}</p>

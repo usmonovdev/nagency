@@ -9,32 +9,38 @@ const projects = [
     {
         name: "Nike Shoes Store",
         title: "Web Development",
-        photo: `${nike}`
+        photo: `${nike}`,
+        id: 1
     },
     {
         name: "Educational Games",
         title: "Web Development",
-        photo: `${education}`
+        photo: `${education}`,
+        id: 2
     },
     {
         name: "VR Store",
         title: "App Development",
-        photo: `${vr}`
+        photo: `${vr}`,
+        id: 3
     },
     {
         name: "Booking App",
         title: "App Development",
-        photo: `${booking}`
+        photo: `${booking}`,
+        id: 4
     },
     {
         name: "Vr Store",
         title: "App Development",
-        photo: `${vrStore}`
+        photo: `${vrStore}`,
+        id: 5
     },
     {
         name: "Podcast App",
         title: "App Development",
-        photo: `${podcast}`
+        photo: `${podcast}`,
+        id: 6
     },
 ]
 

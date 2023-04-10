@@ -10,6 +10,7 @@ import HomeSecondIndex from "./home/service/Index.vue"
 import HomeThirdIndex from "./home/works/Index.vue"
 import HomeFourthIndex from "./home/team/Index.vue"
 import HomeFifthIndex from "./home/solutions/Index.vue"
+import HomeSixtyIndex from "./home/projects/Index.vue"
 
 // UI COMPONENTS
 import PinkButton from "../ui-components/PinkButton.vue"
@@ -19,5 +20,5 @@ import TitleName from "../ui-components/TitleName.vue"
 
 export default [
     Container, NavbarLarge, NavbarSmall, FooterBottom, PinkButton, BlueButton, HomeFirstIndex, HomeSecondIndex, 
-    TitleInfo, TitleName, HomeThirdIndex, HomeFourthIndex, HomeFifthIndex
+    TitleInfo, TitleName, HomeThirdIndex, HomeFourthIndex, HomeFifthIndex, HomeSixtyIndex
 ]

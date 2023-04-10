@@ -18,9 +18,6 @@ export default {
       solution: solutions,
     };
   },
-  mounted() {
-    console.log(this.solutions);
-  },
 };
 </script>
 <style lang="scss" scoped>

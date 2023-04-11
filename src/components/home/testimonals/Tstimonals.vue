@@ -40,7 +40,7 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 20px;
-  overflow-x: visible;
+  overflow-x: scroll;
   .testimonials {
     width: 400px;
     height: 95px;
@@ -49,7 +49,7 @@ export default {
     color: var(--greyscale--grey);
     align-items: center;
     gap: 20px;
-    box-shadow: 0px 44px 94px rgba(0, 0, 0, 0.06);
+    border: 1px solid #E5EAF1;
     border-radius: 45px;
     background-color: #fff;
     padding: 30px;
@@ -59,21 +59,11 @@ export default {
   }
   .testimonials.first {
     position: relative;
-    right: 150px;
-    animation: first 9000ms infinite;
-    @keyframes first {
-      100% {
-        transform: translateX(-80%);
-      }
-    }
+    right: 200px;
   }
   .testimonials.second {
-    animation: first 7000ms infinite;
-    @keyframes first {
-      100% {
-        transform: translateX(-80%);
-      }
-    }
+    position: relative;
+    right: 100px;
   }
 }
 </style>

@@ -67,6 +67,18 @@ const testimonals = [
         photo: `${martin}`,
         id: 10
     },
+    {
+        username: "christin.ja",
+        message: "I just love how these people build this system",
+        photo: `${christin}`,
+        id: 4
+    },
+    {
+        username: "martin.a",
+        message: "I just love how these people build this system",
+        photo: `${alexborm}`,
+        id: 4
+    },
 ]
 
 export default testimonals

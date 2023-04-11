@@ -52,7 +52,7 @@ export default {
     border: 1px solid #E5EAF1;
     border-radius: 45px;
     background-color: #fff;
-    padding: 30px;
+    padding: 20px;
     img {
       width: 52px;
     }

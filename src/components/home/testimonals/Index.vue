@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="testimonals">
         <div class="title">
             <TitleName>
                 Testimonials
@@ -8,19 +8,27 @@
                 Our happy clients say about us
             </TitleInfo>
         </div>
+        <Testimonals />
     </div>
 </template>
 <script>
+import Testimonals from "./Tstimonals.vue"
 export default {
-    name: "HomeSeventhIndex"
+    name: "HomeSeventhIndex",
+    components: { Testimonals }
 }
 </script>
 <style lang="scss" scoped>
-.title {
-    width: 100%;
+.testimonals {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    gap: 50px;
+    .title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 }
 </style>

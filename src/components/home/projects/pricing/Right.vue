@@ -30,9 +30,6 @@ export default {
       price: price,
     };
   },
-  mounted() {
-    console.log(this.price);
-  },
 };
 </script>
 

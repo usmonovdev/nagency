@@ -1,7 +1,3 @@
-<script setup>
-import "./assets/base.css";
-</script>
-
 <template>
   <NavbarLarge />
   <NavbarSmall />
@@ -18,6 +14,10 @@ import "./assets/base.css";
   </Container>
   <FooterBottom />
 </template>
+
+<script setup>
+import "./assets/base.css"
+</script>
 
 <style scoped lang="scss">
 .main-style {

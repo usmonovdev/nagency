@@ -57,7 +57,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .left {
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 20px;

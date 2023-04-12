@@ -35,6 +35,7 @@ export default {
         flex-direction: column;
         align-items: center;
         gap: 10px;
+        text-align: center;
     }
     .questions {
         margin-top: 30px;

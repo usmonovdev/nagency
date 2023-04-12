@@ -20,5 +20,7 @@ button {
   background: var(--main--pink);
   border-radius: 5px;
   border: none;
+  color: var(--main--white);
+  cursor: pointer;
 }
 </style>

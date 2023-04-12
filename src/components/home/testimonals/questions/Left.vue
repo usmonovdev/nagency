@@ -5,7 +5,11 @@
       <TitleInfo> Frequently Asked Questions </TitleInfo>
     </div>
     <div class="questions-box" v-for="data in questions" :key="data.id">
-      <div class="title-box">
+      <div
+        class="title-box"
+        :class="{ active: data.id == opened }"
+        @click="() => handleGetId(data.id)"
+      >
         <p class="title">{{ data.title }}</p>
         <svg
           width="14"
@@ -51,7 +55,14 @@ export default {
           id: 3,
         },
       ],
+      opened: 1,
     };
+  },
+  methods: {
+    handleGetId(e) {
+      console.log(e);
+      this.opened = e;
+    },
   },
 };
 </script>
@@ -67,7 +78,7 @@ export default {
     flex-direction: column;
     gap: 20px;
     border: none;
-    border-bottom: 1px solid #E5EAF1;
+    border-bottom: 1px solid #e5eaf1;
     padding: 0 0 20px 0;
     .title-box {
       display: flex;
@@ -75,14 +86,27 @@ export default {
       justify-content: left;
       align-items: center;
       gap: 20px;
+      cursor: pointer;
       .title {
         color: var(--greyscale--black);
         font-size: 18px;
         font-weight: 700;
       }
     }
+    .title-box.active ~ .question {
+      display: block;
+    }
+    .title-box.active svg {
+      animation: rotate 400ms both;
+    }
+    @keyframes rotate {
+      100% {
+        transform: rotate(180deg);
+      }
+    }
   }
   .question {
+    display: none;
     font-size: 18px;
     color: var(--greyscale--grey);
     font-weight: 400;

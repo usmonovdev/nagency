@@ -1,33 +1,35 @@
 <template>
   <div class="left">
-    <div>
+    <div class="title">
       <TitleName> Common Questions </TitleName>
       <TitleInfo> Frequently Asked Questions </TitleInfo>
     </div>
-    <div class="questions-box" v-for="data in questions" :key="data.id">
-      <div
-        class="title-box"
-        :class="{ active: data.id == opened }"
-        @click="() => handleGetId(data.id)"
-      >
-        <p class="title">{{ data.title }}</p>
-        <svg
-          width="14"
-          height="9"
-          viewBox="0 0 14 9"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+    <div class="big-box">
+      <div class="questions-box" v-for="data in questions" :key="data.id">
+        <div
+          class="title-box"
+          :class="{ active: data.id == opened }"
+          @click="() => handleGetId(data.id)"
         >
-          <path
-            d="M1.16671 7.28808L7.00004 1.45475L12.8334 7.28809"
-            stroke="#0F172A"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
+          <p class="title">{{ data.title }}</p>
+          <svg
+            width="14"
+            height="9"
+            viewBox="0 0 14 9"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.16671 7.28808L7.00004 1.45475L12.8334 7.28809"
+              stroke="#0F172A"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <p class="question">{{ data.answer }}</p>
       </div>
-      <p class="question">{{ data.answer }}</p>
     </div>
   </div>
 </template>
@@ -71,37 +73,50 @@ export default {
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  .questions-box {
+  gap: 30px;
+  @media screen and (max-width: 1200px) {
     width: 100%;
+  }
+  .title {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    border: none;
-    border-bottom: 1px solid #e5eaf1;
-    padding: 0 0 20px 0;
-    .title-box {
+    gap: 30px;
+  }
+  .big-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .questions-box {
+      width: 100%;
       display: flex;
-      flex-direction: row-reverse;
-      justify-content: left;
-      align-items: center;
-      gap: 20px;
-      cursor: pointer;
-      .title {
-        color: var(--greyscale--black);
-        font-size: 18px;
-        font-weight: 700;
+      flex-direction: column;
+      gap: 30px;
+      border: none;
+      border-bottom: 1px solid #e5eaf1;
+      padding: 0 0 20px 0;
+      .title-box {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+        align-items: center;
+        gap: 20px;
+        cursor: pointer;
+        .title {
+          color: var(--greyscale--black);
+          font-size: 18px;
+          font-weight: 700;
+        }
       }
-    }
-    .title-box.active ~ .question {
-      display: block;
-    }
-    .title-box.active svg {
-      animation: rotate 400ms both;
-    }
-    @keyframes rotate {
-      100% {
-        transform: rotate(180deg);
+      .title-box.active ~ .question {
+        display: block;
+      }
+      .title-box.active svg {
+        animation: rotate 400ms both;
+      }
+      @keyframes rotate {
+        100% {
+          transform: rotate(180deg);
+        }
       }
     }
   }

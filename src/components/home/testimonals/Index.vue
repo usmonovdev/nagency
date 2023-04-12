@@ -37,9 +37,17 @@ export default {
         gap: 10px;
     }
     .questions {
+        margin-top: 30px;
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        gap: 20px;
+        @media screen and (max-width: 1200px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
     }
 }
 </style>

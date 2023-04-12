@@ -10,13 +10,14 @@
       <HomeFifthIndex />
       <HomeSixtyIndex />
       <HomeSeventhIndex />
+      <HomeEightyIndex />
     </div>
   </Container>
   <FooterBottom />
 </template>
 
 <script setup>
-import "./assets/base.css"
+import "./assets/base.css";
 </script>
 
 <style scoped lang="scss">

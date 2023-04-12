@@ -4,12 +4,12 @@
       <div class="box">
         <img src="../../assets/logo.png" alt="logo" />
         <ul>
-          <li class="link active"><a href="#">Home</a></li>
-          <li class="link"><a href="#">About</a></li>
-          <li class="link"><a href="#">Service</a></li>
-          <li class="link"><a href="#">Testimonial</a></li>
-          <li class="link"><a href="#">Pages</a></li>
-          <li class="link"><a href="#">Pricing</a></li>
+          <li class="link active"><a href="#/">Home</a></li>
+          <li class="link"><a href="#/about">About</a></li>
+          <li class="link"><a href="#/service">Service</a></li>
+          <li class="link"><a href="#/testimonial">Testimonial</a></li>
+          <li class="link"><a href="#/pages">Pages</a></li>
+          <li class="link"><a href="#/pricing">Pricing</a></li>
         </ul>
         <PinkButton><a href="#" class="contact">Contact Us</a></PinkButton>
       </div>

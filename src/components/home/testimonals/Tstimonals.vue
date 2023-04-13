@@ -31,7 +31,6 @@ export default {
   mounted() {
     this.sliceTestimonialFirst();
     this.sliceTestimonialSecond();
-    console.log(this.testimonalFirst);
   },
 };
 </script>

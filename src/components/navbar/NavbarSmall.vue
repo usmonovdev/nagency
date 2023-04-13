@@ -16,13 +16,15 @@
         </div>
         <div class="items" :class="{ active: menu == true }">
           <ul>
-            <li class="link active"><a href="#/">Home</a></li>
-            <li class="link"><a href="#/about">About</a></li>
-            <li class="link"><a href="#/service">Service</a></li>
-            <li class="link"><a href="#/testimonial">Testimonial</a></li>
-            <li class="link"><a href="#/pages">Pages</a></li>
-            <li class="link"><a href="#/pricing">Pricing</a></li>
-            <li class="link"><a href="#/contact">Contact Us</a></li>
+            <li 
+            v-for="data in links"
+            :key="data.id"
+            class="link"
+            :class="{active: data.id == activeLink}"
+            @click="handleGetId(data.id)"
+          >
+            <a :href="'#' + data.link">{{ data.name }}</a>
+          </li>
           </ul>
         </div>
       </div>
@@ -35,8 +37,46 @@ export default {
   name: "NavbarSmall",
   data() {
     return {
+      links: [
+        {
+          id: 1,
+          name: "Home",
+          link: "/",
+        },
+        {
+          id: 2,
+          name: "About",
+          link: "/about",
+        },
+        {
+          id: 3,
+          name: "Service",
+          link: "/service",
+        },
+        {
+          id: 4,
+          name: "Testimonial",
+          link: "/testimonial",
+        },
+        {
+          id: 5,
+          name: "Pages",
+          link: "/pages",
+        },
+        {
+          id: 6,
+          name: "Pricing",
+          link: "/pricing",
+        },
+      ],
+      activeLink: 1,
       menu: false,
     };
+  },
+  methods: {
+    handleGetId(e) {
+      this.activeLink = e
+    }
   },
 };
 </script>

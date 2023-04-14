@@ -1,9 +1,7 @@
 <template>
   <NavbarLarge />
   <NavbarSmall />
-  <Container>
-    <component :is="currentView" />
-  </Container>
+  <component :is="currentView" />
   <FooterBottom />
 </template>
 
@@ -18,13 +16,13 @@ import Pricing from "./components/pricing/Pricing.vue";
 import NotFound from "./components/NotFound.vue";
 
 const routes = {
-  '/': Home,
-  '/about': About,
-  '/service': Service,
-  '/testimonial': Testimonial,
-  '/pages': Pages,
-  '/pricing': Pricing
-}
+  "/": Home,
+  "/about": About,
+  "/service": Service,
+  "/testimonial": Testimonial,
+  "/pages": Pages,
+  "/pricing": Pricing,
+};
 
 export default {
   components: {
@@ -32,22 +30,20 @@ export default {
   },
   data() {
     return {
-      currentPath: window.location.hash
-    }
+      currentPath: window.location.hash,
+    };
   },
   computed: {
     currentView() {
-      return routes[this.currentPath.slice(1) || '/' || NotFound]
-    }
+      return routes[this.currentPath.slice(1) || "/" || NotFound];
+    },
   },
   mounted() {
-    window.addEventListener('hashchange', () => {
-      this.currentPath = window.location.hash
-    })
+    window.addEventListener("hashchange", () => {
+      this.currentPath = window.location.hash;
+    });
   },
 };
 </script>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

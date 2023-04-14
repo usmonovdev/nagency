@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header :class="{ background: activeLink !== 1 }">
     <Container>
       <div class="box">
         <img src="../../assets/logo.png" alt="logo" />
@@ -120,5 +120,8 @@ header {
       }
     }
   }
+}
+header.background {
+  background-color: var(--main--navigation);
 }
 </style>

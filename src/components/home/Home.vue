@@ -1,14 +1,16 @@
 <template>
-  <div class="main-style">
-    <HomeFirstIndex />
-    <HomeSecondIndex />
-    <HomeThirdIndex />
-    <HomeFourthIndex />
-    <HomeFifthIndex />
-    <HomeSixtyIndex />
-    <HomeSeventhIndex />
-    <HomeEightyIndex />
-  </div>
+  <Container>
+    <div class="main-style">
+      <HomeFirstIndex />
+      <HomeSecondIndex />
+      <HomeThirdIndex />
+      <HomeFourthIndex />
+      <HomeFifthIndex />
+      <HomeSixtyIndex />
+      <HomeSeventhIndex />
+      <HomeEightyIndex />
+    </div>
+  </Container>
 </template>
 
 <script>

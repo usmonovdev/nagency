@@ -10,13 +10,20 @@
         <AboutSecondIndex />
         <AboutThirdIndex />
         <AboutFourthIndex />
+        <HomeFourthIndex/>
+        <HomeThirdIndex/>
+        <Testimonials />
+        <HomeEightyIndex/>
       </div>
     </Container>
   </div>
 </template>
 
 <script>
-export default {};
+import Testimonials from '../home/testimonals/Tstimonals.vue';
+export default {
+  components: { Testimonials }
+};
 </script>
 
 <style lang="scss" scoped>

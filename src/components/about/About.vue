@@ -7,6 +7,7 @@
     <Container>
       <div class="main-style">
         <AboutFirstIndex/>
+        <AboutSecondIndex />
       </div>
     </Container>
   </div>

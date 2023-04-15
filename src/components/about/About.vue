@@ -8,6 +8,7 @@
       <div class="main-style">
         <AboutFirstIndex/>
         <AboutSecondIndex />
+        <AboutThirdIndex />
       </div>
     </Container>
   </div>

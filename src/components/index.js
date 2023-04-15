@@ -13,11 +13,14 @@ import HomeSixtyIndex from "./home/projects/Index.vue"
 import HomeSeventhIndex from "./home/testimonals/Index.vue"
 import HomeEightyIndex from "./home/contact-us/Index.vue"
 
-// About
+// ABOUT
 import AboutFirstIndex from "./about/main/Index.vue"
 import AboutSecondIndex from "./about/albert/Index.vue"
 import AboutThirdIndex from "./about/data/Index.vue"
 import AboutFourthIndex from "./about/visions/Index.vue"
+
+// SERVICE
+import ServiceFirstIndex from "./service/services/Index.vue"
 
 // UI COMPONENTS
 import PinkButton from "../ui-components/PinkButton.vue"
@@ -31,5 +34,5 @@ export default [
     Container, NavbarLarge, NavbarSmall, FooterBottom, PinkButton, BlueButton, HomeFirstIndex, HomeSecondIndex, 
     TitleInfo, TitleName, HomeThirdIndex, HomeFourthIndex, HomeFifthIndex, HomeSixtyIndex, HomeSeventhIndex,
     HomeEightyIndex, BigNavigationText, SmallNavigationText, AboutFirstIndex, AboutSecondIndex, AboutThirdIndex,
-    AboutFourthIndex
+    AboutFourthIndex, ServiceFirstIndex
 ]

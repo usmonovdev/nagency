@@ -17,12 +17,12 @@
       <div class="links">
         <ul>
           <li><p>Quick links</p></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Testimonial</a></li>
-          <li><a href="#">Pages</a></li>
-          <li><a href="#">Pricing</a></li>
+          <li><a href="#/">Home</a></li>
+          <li><a href="#/about">About</a></li>
+          <li><a href="#/service">Service</a></li>
+          <li><a href="#/testimonial">Testimonial</a></li>
+          <li><a href="#/pages">Pages</a></li>
+          <li><a href="#/pricing">Pricing</a></li>
         </ul>
         <ul>
           <li><p>Help</p></li>

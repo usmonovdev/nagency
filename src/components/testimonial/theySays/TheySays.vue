@@ -70,6 +70,9 @@ export default {
             display: flex;
             flex-direction: row;
             gap: 45px;
+            @media screen and (max-width: 600px) {
+                flex-direction: column;
+            }
             .left {
                 // width: 100%;
                 img {
@@ -78,19 +81,29 @@ export default {
                 }
             }
             .right {
+                width: 300px;
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
+                @media screen and (max-width: 600px) {
+                    width: 400px;
+                }
                 p {
                     font-weight: 400;
                     font-size: 18px;
                     color: var(--greyscale--grey);
                     margin-bottom: 20px;
+                    @media screen and (max-width: 600px) {
+                        font-size: 18px;
+                    }
                 }
                 h1 {
                     font-weight: 600;
                     font-size: 32px;
                     color: var(--greyscale--black);
+                    @media screen and (max-width: 600px) {
+                        font-size: 24px;
+                    }
                 }
                 .bottom {
                     display: flex;

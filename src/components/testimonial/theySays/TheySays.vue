@@ -26,13 +26,22 @@
                 </div>
             </div>
         </div>
+        <div class="questions">
+            <Left/>
+            <Right/>
+        </div>
     </div>
 </template>
 
 <script>
 import data from "@/data/they_says"
+import Left from "../../home/testimonals/questions/Left.vue";
+import Right from "../../home/testimonals/questions/Right.vue";
 export default {
     name: "TestimonialFirstIndex",
+    components: {
+        Left, Right
+    },
     data() {
         return {
             data: data
@@ -127,6 +136,19 @@ export default {
                     }
                 }
             }
+        }
+    }
+    .questions {
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        @media screen and (max-width: 1200px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
         }
     }
 }

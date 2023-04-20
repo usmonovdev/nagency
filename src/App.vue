@@ -11,7 +11,7 @@ import Home from "./components/home/Home.vue";
 import About from "./components/about/About.vue";
 import Service from "./components/service/Service.vue";
 import Testimonial from "./components/testimonial/Testimonial.vue";
-import Pages from "./components/pages/Pages.vue";
+import Team from "./components/team/Team.vue";
 import Pricing from "./components/pricing/Pricing.vue";
 import NotFound from "./components/NotFound.vue";
 
@@ -20,7 +20,7 @@ const routes = {
   "/about": About,
   "/service": Service,
   "/testimonial": Testimonial,
-  "/pages": Pages,
+  "/team": Team,
   "/pricing": Pricing,
 };
 

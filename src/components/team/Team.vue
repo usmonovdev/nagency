@@ -1,9 +1,14 @@
 <template>
   <div>
     <div class="title">
-      <BigNavigationText>Pricing</BigNavigationText>
-      <SmallNavigationText>Home / Pricing</SmallNavigationText>
+      <BigNavigationText>Our Team</BigNavigationText>
+      <SmallNavigationText>Home / Our Team</SmallNavigationText>
     </div>
+    <Container>
+      <div class="main">
+        <TeamFirstIndex/>
+      </div>
+    </Container>
   </div>
 </template>
 
@@ -20,5 +25,13 @@ export default {};
   justify-content: center;
   background-color: var(--main--navigation);
   margin-bottom: 100px;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  &:last-child {
+    margin-bottom: 100px;
+  }
 }
 </style>

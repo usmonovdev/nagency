@@ -1,12 +1,12 @@
 <template>
     <div>
-        pages
+        asdasd
     </div>
 </template>
 
 <script>
 export default {
-    
+    name: "TeamFirstIndex"
 }
 </script>
 

@@ -14,6 +14,7 @@
           <Testimonials />
         </div>
         <TestimonialFirstIndex />
+        <HomeEightyIndex/>
       </div>
     </Container>
   </div>

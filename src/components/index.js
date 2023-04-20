@@ -25,6 +25,9 @@ import ServiceFirstIndex from "./service/services/Index.vue"
 // TESTIMONIALS
 import TestimonialFirstIndex from "./testimonial/theySays/TheySays.vue"
 
+// TEAM
+import TeamFirstIndex from "./team/ourTeam/OurTeam.vue"
+
 // UI COMPONENTS
 import PinkButton from "../ui-components/PinkButton.vue"
 import BlueButton from "../ui-components/BlueButton.vue"
@@ -37,5 +40,5 @@ export default [
     Container, NavbarLarge, NavbarSmall, FooterBottom, PinkButton, BlueButton, HomeFirstIndex, HomeSecondIndex, 
     TitleInfo, TitleName, HomeThirdIndex, HomeFourthIndex, HomeFifthIndex, HomeSixtyIndex, HomeSeventhIndex,
     HomeEightyIndex, BigNavigationText, SmallNavigationText, AboutFirstIndex, AboutSecondIndex, AboutThirdIndex,
-    AboutFourthIndex, ServiceFirstIndex, TestimonialFirstIndex
+    AboutFourthIndex, ServiceFirstIndex, TestimonialFirstIndex, TeamFirstIndex
 ]

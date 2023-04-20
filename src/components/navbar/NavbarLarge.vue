@@ -48,8 +48,8 @@ export default {
         },
         {
           id: 5,
-          name: "Pages",
-          link: "/pages",
+          name: "Team",
+          link: "/team",
         },
         {
           id: 6,

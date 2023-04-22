@@ -7,6 +7,7 @@
     <Container>
       <div class="main">
         <TeamFirstIndex/>
+        <TeamSecondIndex/>
       </div>
     </Container>
   </div>

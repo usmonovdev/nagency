@@ -24,10 +24,7 @@ export default {
     return {
       team: team,
     };
-  },
-  mounted() {
-    console.log(this.team);
-  },
+  }
 };
 </script>
 
@@ -65,7 +62,10 @@ export default {
       box-shadow: 0px 4px 64px rgba(35, 40, 105, 0.1);
       border-radius: 20px;
       &:nth-child(odd) {
-        transform: rotate(5deg);
+        transform: rotate(3deg);
+      }
+      &:nth-child(even) {
+        transform: rotate(-3deg);
       }
       &:hover {
         transform: rotate(0) scale(1.1);

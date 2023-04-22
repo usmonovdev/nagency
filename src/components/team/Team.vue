@@ -8,6 +8,7 @@
       <div class="main">
         <TeamFirstIndex/>
         <TeamSecondIndex/>
+        <TeamThirdIndex/>
       </div>
     </Container>
   </div>

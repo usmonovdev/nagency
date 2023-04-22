@@ -40,6 +40,9 @@ export default {
         display: flex;
         flex-direction: column;
         gap: 10px;
+        @media screen and (max-width: 768px) {
+            align-items: center;
+        }
     }
     .positions-box {
         width: 100%;
@@ -50,9 +53,11 @@ export default {
         gap: 20px;
         @media screen and (max-width: 992px) {
             grid-template-columns: 1fr 1fr;
+            gap: 40px;
         }
         @media screen and (max-width: 768px) {
             grid-template-columns: 1fr;
+            gap: 40px;
         }
         .position {
             width: 80%;
@@ -87,10 +92,7 @@ export default {
                 width: 100%;
             }
             @media screen and (max-width: 992px) {
-                width: 80%;
-            }
-            @media screen and (max-width: 992px) {
-                width: 100%;
+                width: 90%;
             }
         }
     }

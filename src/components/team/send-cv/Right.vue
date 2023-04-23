@@ -1,12 +1,13 @@
 <template>
     <div class="main">
-        right
+        <Input/>
     </div>
 </template>
 
 <script>
+import Input from '@/ui-components/Input.vue';
 export default {
-    
+    components: { Input }
 }
 </script>
 <style lang="scss" scoped>

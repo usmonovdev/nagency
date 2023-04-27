@@ -1,6 +1,12 @@
 <template>
     <div class="main">
-        <Input/>
+        <form action="payload" method="get">
+            <Input/>
+            <div>
+                <Input/>
+                <Input placeholder="name"/>
+            </div>
+        </form>
     </div>
 </template>
 

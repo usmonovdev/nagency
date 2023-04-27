@@ -13,7 +13,7 @@ input {
     height: 47px;
     border: 1px solid #EDEDED;
     outline: none;
-    padding: 20px;
+    padding: 0 20px 0 20px;
     font-weight: 600;
     font-size: 14px;
     color: var(--greyscale--grey);

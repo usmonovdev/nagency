@@ -1,42 +1,79 @@
 <template>
     <div class="main">
-        <form action="payload" method="get">
-            <Input placeholder="Name"/>
+        <form action="payload" method="get" @submit.prevent>
+            <input placeholder="Name" v-model="name"/>
             <div class="email-phone">
-                <Input placeholder="Email"/>
-                <Input placeholder="Phone"/>
+                <input placeholder="Email" v-model="email"/>
+                <input placeholder="Phone" v-model="phone"/>
             </div>
-            <select>
+            <select v-model="position">
                 <option value="">Position applied for</option>
                 <option :value="data.position" v-for="data in positions">{{ data.position }}</option>
             </select>
-            <Input placeholder="Portfolio link"/>
+            <input placeholder="Portfolio link" v-model="portfolio"/>
             <div class="file">
                 <p>Upload your CV</p>
                 <label for="file">
                     <img src="@/assets/icon/Drop.svg" alt="drop">
                     <p>Drag and drop your file here <br> Or <span>browse files</span></p>
                 </label>
-                <Input id="file" type="file"/>
+                <input id="file" type="file" @change="file_cv"/>
             </div>
-            <BlueButton>Submit</BlueButton>
+            <BlueButton @click="submit">Submit</BlueButton>
         </form>
     </div>
 </template>
 
 <script>
 import positions from "@/data/positions"
-import Input from '@/ui-components/Input.vue';
+// import Input from '@/ui-components/Input.vue';
 export default {
-    components: { Input },
+    // components: { Input },
     data() {
         return {
-            positions: positions
+            positions: positions,
+            name: '',
+            phone: "",
+            email: "",
+            position: "",
+            portfolio: "",
+            cv: "",
+            submit_data: {}
+        }
+    },
+    methods: {
+        submit() {
+            this.submit_data = {
+                name: this.name,
+                phone: this.phone,
+                email: this.email,
+                position: this.position,
+                portfolio: this.portfolio,
+                cv: this.cv
+            }
+            console.log(this.submit_data);
+        },
+        file_cv(e) {
+            this.cv = e.target.value
+            console.log(e.target.value);
         }
     },
 }
 </script>
 <style lang="scss" scoped>
+input {
+    width: 100%;
+    height: 47px;
+    border: 1px solid #EDEDED;
+    outline: none;
+    padding: 0 20px 0 20px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--greyscale--grey);
+    &::placeholder {
+        font-weight: 400;
+    }
+}
 .main {
     width: 50%;
     form {
@@ -53,12 +90,16 @@ export default {
         select {
             width: 100%;
             height: 47px;
-            // border: 1px solid #EDEDED;
+            border: 1px solid #EDEDED;
             outline: none;
-            padding: 20px;
+            padding: 0 20px 0 20px;
             font-weight: 600;
             font-size: 14px;
-            // color: var(--greyscale--grey);
+            color: var(--greyscale--grey);
+            option {
+                width: 100%;
+                height: 47px;
+            }
         }
         .file {
             p {

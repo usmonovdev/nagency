@@ -24,10 +24,7 @@ export default {
         return {
             position: position
         }
-    },
-    mounted() {
-        console.log(this.position);
-    },
+    }
 }
 </script>
 

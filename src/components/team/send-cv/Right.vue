@@ -26,9 +26,7 @@
 
 <script>
 import positions from "@/data/positions"
-// import Input from '@/ui-components/Input.vue';
 export default {
-    // components: { Input },
     data() {
         return {
             positions: positions,

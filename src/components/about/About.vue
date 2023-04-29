@@ -5,7 +5,7 @@
       <SmallNavigationText>Home / About us</SmallNavigationText>
     </div>
     <Container>
-      <div class="main-style">
+      <div class="main">
         <AboutFirstIndex/>
         <AboutSecondIndex />
         <AboutThirdIndex />
@@ -36,7 +36,7 @@ export default {
   background-color: var(--main--navigation);
   margin-bottom: 100px;
 }
-.main-style {
+.main {
   display: flex;
   flex-direction: column;
   gap: 100px;

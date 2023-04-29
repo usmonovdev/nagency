@@ -9,6 +9,7 @@
         <TeamFirstIndex/>
         <TeamSecondIndex/>
         <TeamThirdIndex/>
+        <HomeEightyIndex/>
       </div>
     </Container>
   </div>

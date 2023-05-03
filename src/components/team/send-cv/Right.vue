@@ -19,7 +19,7 @@
                 </label>
                 <input id="file" type="file" @change="file_cv"/>
             </div>
-            <BlueButton @click="submit">Submit</BlueButton>
+            <BlueButton @click="submit">Submitt</BlueButton>
         </form>
     </div>
 </template>
